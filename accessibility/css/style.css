@@ -5,10 +5,10 @@ body {
 }
 
 html {
-    height: 100%;
-    background: linear-gradient(135deg, #032850 10%, #0E5CAD 100%);
+    height: 0.1vh;
+    background: linear-gradient(135deg, #032850 10%, #0E5CAD, #8500d8, #d800b7 100%);
     background-size: 400% 100%;
-    animation: gradient 20s ease infinite;
+    animation: gradient 40s ease infinite;
 }
 
 @keyframes gradient {
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    padding: 2em;
+    padding: 2em 5em;
     max-width: 40em;
     margin: 0 auto;
     color: #555;
@@ -45,11 +45,36 @@ strong {
     color: #000
 }
 
+ul {
+    margin-block-start: 0;
+    padding: 1.25rem;
+}
+
+
 ul li {
     margin-bottom: 0.5em;
 }
 
+p {
+    margin-top: 0;
+}
 
+
+blockquote {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before {
+    color: rgba(0, 0, 0, 0.1);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
 
 .nav {
     margin-top: 3em;
@@ -84,14 +109,7 @@ img {
     margin-right: 1em;
 }
 
-ul {
-    margin-block-start: 0;
-    padding: 1.25rem;
-}
 
-p {
-    margin-top: 0;
-}
 
 .sm {
     font-size: 0.8em;
@@ -104,3 +122,4 @@ p {
 .lg {
     font-size: 1.4em;
 }
+
